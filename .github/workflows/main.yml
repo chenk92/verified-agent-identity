@@ -21,3 +21,9 @@ jobs:
       - name: Run Script
         run: |
           node scripts/createNewEthereumIdentity.js
+      
+      - name: Generate Billions Verification Link
+        run: |
+             node scripts/manualLinkHumanToAgent.js --challenge '{"name": "My Verified Agent", "description": "Agent terverifikasi"}'
+
+
